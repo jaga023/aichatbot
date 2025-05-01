@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al PackSaavy - Smart Travel Packing Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Al PackSaavy</h1>
+        <p>Smart Travel Packing Assistant</p>
+    </header>
+
+    <main>
+        <section class="trip-form">
+            <h2>Plan Your Trip</h2>
+            <form id="packingForm">
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit">Generate Packing List</button>
+            </form>
+        </section>
+
+        <section class="packing-list">
+            <h2>Your Packing List</h2>
+            <div id="listContainer"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
